@@ -1,0 +1,484 @@
+/********** Template CSS **********/
+:root {
+    --primary: #fe8616;
+    --light: #ffffff;
+    --dark: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none !important;
+    outline: none !important;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    color: #000000;
+    margin: 0;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+}
+h5{
+    font-size: 14px;
+}
+h6{
+    font-size: 13px;
+}
+a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #1f1f1f;
+    text-decoration: none;
+    outline: none;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+/*** Navbar ***/
+.top-navbar {
+    position: relative;
+    z-index: 10;
+}
+.top-navbar .navbar {
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px 0px 100px 100px;      
+}
+.top-navbar .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  background: #fe8616;
+  color: #ffffff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #fe8616;
+    color: #ffffff;
+    border-radius: 4px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border: none;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background: #fe8616;
+    color: #ffffff;
+}
+.navbar-light .navbar-toggler:hover {
+    background: #fe8616;
+}
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;  
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-inner {
+    background: rgba(15, 23, 43, .7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+.booking {
+    position: relative;
+    margin-top: -100px !important;
+    z-index: 1;
+}
+
+/*** qt-bg ***/
+
+.qt-background{
+	background: url(../images/qt-bg.jpg) no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+}
+
+.qt-background p {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #fff;
+	font-family: sans-serif;
+}
+
+.qt-background span {
+    color: #fff;
+    font-size: 25px;  
+	font-weight: 600;	
+}
+
+/*** About ***/
+
+.about-section-box{
+	padding: 70px 0px;
+	background: #ffffff url(../images/about-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+}
+
+.about-section-box .img-fluid{
+	box-shadow: 20px 20px 0px #fe8616;
+}
+
+.inner-column{
+	text-align: left;
+}
+
+.inner-column h1{
+	font-family: "Rubik", sans-serif;
+	font-size: 30px;
+	color: #000000;
+	font-weight: 500;
+}
+
+.inner-column h1 span{
+	color: #fe8616;
+}
+
+.inner-column h4{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.inner-column p{
+	font-size: 18px;
+	color: #000000;
+}
+
+
+/*** Gallery ***/
+
+.gallery-box{
+	padding: 60px 0px;
+}
+
+.gallery .box{
+	border: 2px solid #fe8616;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+/*** Contact ***/
+
+.contact-box{
+	background: #fe8616;
+	padding: 30px 0;
+	border-radius: 100px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.contact-box i{
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #fff;
+	color: #fe8616;
+	font-size: 30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+.contact-box h4 {
+    margin: 0px;
+    margin-top: 5px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 0px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.contact-box p {
+    margin: 0px;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+/*** Footer ***/
+
+.footer-area{
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+.bg-f{
+	background-image: url("../images/footer-bg.jpg");
+	background-color: rgba(0, 0, 0, 0);
+	background-origin: initial;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.bg-f:before {
+    background: #000000;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+	opacity: 0.8;
+}
+
+.footer-area .container{
+	position: relative;
+	z-index: 1;
+}
+
+.footer-area h3{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	border-bottom: 2px solid rgba(185, 144, 91, 0.5);
+	margin-bottom: 10px;
+}
+
+.footer-area p{
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.arrow-right{
+	position: relative;
+}
+
+.arrow-right:before {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	color: #fff;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+
+.footer-area p.lead{
+	font-size: 19px;
+	color: #ffffff;
+	margin-bottom: 0px;
+}
+
+.footer-area p.lead a{
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.footer-area p.lead a:hover{
+	color: #fe8616;
+}
+
+.footer-area p a{
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.footer-area p a:hover{
+	color: #fe8616;
+}
+
+.subscribe_form {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.subscribe_form .form_input {
+    display: block;
+    background-color: rgba(0,0,0,0.9);
+	border: 1px solid #ffffff;
+    color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 10px;
+	font-weight: 300;
+    width: 100%;
+}
+
+.subscribe_form .submit {
+    background-color: #fe8616;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.f-social {
+    color:#fff;
+    padding-bottom: 10px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.f-social li a {
+    font-size: 18px;
+    color: #fe8616;
+	width: 38px;
+	height: 38px;
+	display: block;
+	text-align: center;
+	line-height: 38px;
+	background: #000000;
+	border-radius: 4px;
+}
+
+.copyright{
+	margin-top: 20px;
+	position: relative;
+	display: block;
+	background-color: #010101;
+	border-top: 1px solid rgba(207, 166, 113);
+	padding: 30px 0;
+	z-index: 1;
+}
+
+.copyright .company-name{
+	font-size: 16px;
+	text-align: center;
+}
+
+.copyright .company-name a{
+	font-size: 16px;
+}
